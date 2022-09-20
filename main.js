@@ -1,19 +1,32 @@
-var humanYearsCatYearsDogYears = function(humanYears) {
-    // Your code here!
-    let cat = 0
-    let dog = 0
-    let a = 4;
-    let b = 5;
-    if(humanYears<=1){
-      cat=cat + 15;
-      dog = dog + 15;
-    }else if(humanYears = 2){
-      cat = cat + 24;
-      dog = dog + 24;
-    }else if (humanYears>2){
-      cat = 24 + (humanYears-2)*a
-      dog = 24 + (humanYears-2)*b
+/* FreeCodeCamp */
+function freezeObj() {
+    const MATH_CONSTANTS = {
+      PI: 3.14
+    };
+    // Only change code below this line
+  Object.freeze(MATH_CONSTANTS.PI)
+  
+    // Only change code above this line
+    try {
+      MATH_CONSTANTS.PI = 99;
+    } catch(ex) {
+      console.log(ex);
     }
-    return [humanYears,cat,dog];
+    return MATH_CONSTANTS.PI;
   }
-  console.log(humanYearsCatYearsDogYears(10))
+  const PI = freezeObj();
+
+
+/* -------------------------------------------------- */
+
+  const magic = () => {
+    return new Date();
+  };
+  /* ================================================= */
+
+
+const myConcat = (arr1, arr2) => {
+    return arr1.concat(arr2);
+  };
+  
+  console.log(myConcat([1, 2], [3, 4, 5]));
