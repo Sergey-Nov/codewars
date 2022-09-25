@@ -383,5 +383,11 @@ let fixRegex = /(\w+)\s(\w+)\s(\w+)/; // Change this line
 let replaceText ='$3 $2 $1' ; // Change this line
 let result = str.replace(fixRegex, replaceText);
 
-/* -====================================================== */
+/* -========================поиск и удаление пробелов в начале и конце строки (не забыть флаг global)============================== */
+
+let hello = "   Hello, World!  ";
+let wsRegex = /^\s+|\s+$/g; // Change this line
+let result = hello.replace(wsRegex,""); // Change this line
+
+/* =================================Debugging====================== */
 
