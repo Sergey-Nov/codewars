@@ -265,29 +265,35 @@ let result = text.match(myRegex);
 
 let reCriminals = /C+/; // Change this line
 
-/* =================================================================== */
+/* ===============================Поиск паттерна в начале строки==================================== */
 
 let rickyAndCal = "Cal and Ricky both like racing.";
 let calRegex = /^Cal/; // Change this line
 let result = calRegex.test(rickyAndCal);
 
-/* ================================================================== */
+/* ==================================Поиск паттерна в конце строки================================ */
 
 let caboose = "The last car on a train is the caboose";
 let lastRegex = /caboose$/; // Change this line
 let result = lastRegex.test(caboose);
 
-/* =================================================================== */
+/* =================================Поиск букв и цифр================================== */
 
 let quoteSample = "The five boxing wizards jump quickly.";
 let alphabetRegexV2 = /\w/gi; // Change this line
 let result = quoteSample.match(alphabetRegexV2).length;
 
-/* ================================================================= */
+/* =============================Поиск символов не входящих в [A-Za-z0-9_]==================================== */
 
 let quoteSample = "The five boxing wizards jump quickly.";
 let nonAlphabetRegex = /\W/g; // Change this line
 let result = quoteSample.match(nonAlphabetRegex).length;
 
-/* ================================================================== */
+/* =========================Поиск цифр========================================= */
+
+let movieName = "2001: A Space Odyssey";
+let numRegex = /\d/g; // Change this line
+let result = movieName.match(numRegex).length;
+
+/* =========================================================================== */
 
