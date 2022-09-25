@@ -356,4 +356,10 @@ let favWord = "favorite";
 let favRegex = /favou?rite/; // Change this line
 let result = favRegex.test(favWord);
 
-/* =================================================== */
+/* =======================================
+Поиск пароля который содержит более 5-ти символов и может содержать 2-цифры============ */
+let sampleWord = "astronaut";
+let pwRegex = /(?=\w{6})(?=\w*\d{2})/; // Change this line
+let result = pwRegex.test(sampleWord);
+
+/* ============================================= */
