@@ -344,6 +344,11 @@ let haStr = "Hazzzzah";
 let haRegex = /Haz{4,}ah/; // Change this line
 let result = haRegex.test(haStr);
 
-/* =========================================================== */
+/* ===========================Поиск выражений в которых m повторяется 4 раза================================ */
 
+let timStr = "Timmmmber";
+let timRegex = /Tim{4}ber/; // Change this line
+let result = timRegex.test(timStr);
+
+/* ====================================================== */
 
