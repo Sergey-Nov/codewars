@@ -242,12 +242,12 @@ let quoteSample = "3 blind mice.";
 let myRegex = /[^aeiou0-9]/gi; // Change this line
 let result = quoteSample.match(myRegex); // Change this line
 
-/* ================================================================ */
+/* ==============================Поиск одного или нескольких символов================================== */
 let difficultSpelling = "Mississippi";
 let myRegex = /s+/g; // Change this line
 let result = difficultSpelling.match(myRegex);
 
-/* ================================================================ */
+/* =============================Поиск 0 или более символов=================================== */
 
 // Only change code below this line
 let chewieRegex = /Aa*/; // Change this line
@@ -333,5 +333,11 @@ let sample = "Whitespace is important in separating words";
 let countNonWhiteSpace = /\S/g; // Change this line
 let result = sample.match(countNonWhiteSpace);
 
-/* =================================================================== */
+/* ===============================Поиск повторяющихся символов h от{3 до 6} в выражении "Oh no"==================================== */
+let ohStr = "Ohhh no";
+let ohRegex = /Oh{3,6}\sno/; // Change this line
+let result = ohRegex.test(ohStr);
+
+/* ================================================ */
+
 
