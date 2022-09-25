@@ -390,4 +390,14 @@ let wsRegex = /^\s+|\s+$/g; // Change this line
 let result = hello.replace(wsRegex,""); // Change this line
 
 /* =================================Debugging====================== */
+/* ========================cconsole.log method=========================== */
+let a = 5;
+let b = 1;
+a++;
+// Only change code below this line
+console.log(a);
 
+let sumAB = a + b;
+console.log(sumAB);
+
+/* ========================================= */
